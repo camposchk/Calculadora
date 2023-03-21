@@ -11,7 +11,7 @@ while True:
 
 while True:
   try:
-    print("1 Multiplicação | 2 Divisão")
+    print("'1' Multiplicação | '2' Divisão")
     ops = int(input())
     if ops == 1:
       print(Juan.mult(a, b))
