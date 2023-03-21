@@ -1,15 +1,22 @@
 import Murilo
 
-print("Soma")
-a = int(input("Digite o 1° valor: "))
-b = int(input("Digite o 2° valor: "))
+print("Você deseja fazer uma Soma ou Subtração?")
+print("\n1 - Somar \n2 - Subtrair\n")
 
-soma = Murilo.soma(a, b)
-print(soma)
+resp = int(input("Digite qual vc deseja: "))
 
-print("Subtração")
-a = int(input("Digite o 1° valor: "))
-b = int(input("Digite o 2° valor: "))
+if resp == 1:
+  print("Soma")
+  a = int(input("Digite o 1° valor: "))
+  b = int(input("Digite o 2° valor: "))
 
-sub = Murilo.sub(a, b)
-print(sub)
+  soma = Murilo.soma(a, b)
+  print(soma)
+
+elif resp == 2:
+  print("Subtração")
+  a = int(input("Digite o 1° valor: "))
+  b = int(input("Digite o 2° valor: "))
+
+  sub = Murilo.sub(a, b)
+  print(sub)
